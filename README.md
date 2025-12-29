@@ -17,6 +17,27 @@
 ## 🛠️ 系統架構 (System Architecture)
 本系統採用 **LangChain 多智能體 (Multi-Agent)** 協作架構，並具備 **Model Agnostic** 特性，支援 Google Gemini, Groq (Llama 3), DeepSeek 等多種 LLM。
 
+## 🧠 核心技術與模型策略 (Core Tech & Model Strategy)
+
+本系統不依賴外部資料庫 (RAG)，而是透過精心設計的 Prompt Engineering 與多模型協作來達成深度辯證：
+
+### 1. 提示工程 (Prompt Engineering)
+* **Chain-of-Thought (CoT) without RAG:**
+    * 系統強制 Agents 在回覆前進行「顯式推理」：`接收對手觀點` $\rightarrow$ `分析邏輯漏洞` $\rightarrow$ `提出反證/補充`。
+    * 醫學建議完全基於 LLM 的訓練知識與當下的 **對話上下文 (Context-Awareness)**，透過多輪對話的互相修正來收斂最佳解。
+* **Adversarial Prompting (對抗式提示):**
+    * **導播 (Director)** 被設定為「批判者」。它監控對話紀錄，當偵測到中西醫觀點過早妥協或淪為表面客套時，會主動拋出衝突議題（如：副作用、治標與治本的矛盾），激發更深層的討論。
+
+### 2. 模型選擇策略 (Model Strategy)
+MDE 採用 **Model Agnostic** 架構，根據不同模型的強項進行任務分配：
+
+* **🚀 Google Gemini (最佳體驗 / Recommended):**
+    * **優勢:** 具備最強的 **多語言理解與生成能力**。
+    * **應用:** 它是目前唯一能精準執行 **"Text-to-Taiwanese" (文字轉台語)** 的模型，能賦予「阿蓮姨」最道地的語氣與用詞 (如：將 "Side effect" 轉譯為 "副作用" 並用台語口語表達)。
+* **⚡ Groq (Llama 3) (最高 CP 值 / Most Used):**
+    * **優勢:** 推理速度極快 (LPU) 且 **免費額度高**。
+    * **應用:** 開發測試階段的首選，適合處理大量的邏輯辯證與導播指令，大幅降低運算成本。
+
 ### 🤖 核心智能體 (Agents)
 1.  **🎬 AI Director (導播):**
     * **功能:** 運用 **Meta-Prompting** 技術控制對話節奏。
@@ -47,7 +68,10 @@
 
 ### 線上體驗
 
-[點擊這裡前往 Streamlit Cloud 體驗 MDE](https://medical-dialectic-engine.streamlit.app/)
+[前往 Streamlit Cloud 體驗 MDE](https://medical-dialectic-engine.streamlit.app/)
+
+## 📸 系統截圖 (Screenshots)
+![Demo Image](DEMO.png)
 
 ### 本地部署
 1. Clone 專案:
