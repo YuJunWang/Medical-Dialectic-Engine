@@ -32,7 +32,7 @@
 
 4.  **👵 Case Manager (阿蓮姨):**
     * **功能:** **Localization & Nudge (在地化與助推)**。
-    * **設計理念:** 運用 **助推理論 (Nudge Theory)**，將冰冷的專業辯證，轉化為具備在地情感的**「醫療軟著陸 (Medical Soft Landing)」**。
+    * **設計理念:** 運用 **助推理論 (Nudge Theory)**，將冰冷的專業辯證，轉化為具備在地情感的 **「醫療軟著陸 (Medical Soft Landing)」**。
     * **目標:** 降低恐懼，引導病患從線上諮詢走向線下實體醫療。
 
 ## 🗺️ 未來展望 (Roadmap)
