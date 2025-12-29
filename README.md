@@ -1,9 +1,9 @@
 # ⚕️ Medical-Dialectic-Engine
 ### 中西醫觀點辯證引擎 | AI Multi-Agent System
 
-[Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
-[Streamlit](https://img.shields.io/badge/Streamlit-1.31+-ff4b4b.svg)
-[LangChain](https://img.shields.io/badge/LangChain-0.1+-green.svg)
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.31+-ff4b4b.svg)
+![LangChain](https://img.shields.io/badge/LangChain-0.1+-green.svg)
 
 > **"Bridging the Gap" —— 用 AI 彌合實證醫學與傳統中醫的認知鴻溝。**
 >
