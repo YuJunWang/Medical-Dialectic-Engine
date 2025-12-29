@@ -47,7 +47,7 @@
 
 ### 線上體驗
 
-[點擊這裡前往 Streamlit Cloud 體驗 MDE](https://your-app-url.streamlit.app) \*(部署後請替換連結)\*
+[點擊這裡前往 Streamlit Cloud 體驗 MDE](https://https://medical-dialectic-engine.streamlit.app/)
 
 ### 本地部署
 1. Clone 專案:
