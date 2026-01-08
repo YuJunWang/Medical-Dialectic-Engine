@@ -76,7 +76,7 @@ MDE 採用 **Model Agnostic** 架構，根據不同模型的強項進行任務�
 ### 本地部署
 1. Clone 專案:
 ```bash
-git clone [https://github.com/YuJunWang/Medical-Dialectic-Engine.git](https://github.com/YuJunWang/Medical-Dialectic-Engine.git)
+git clone https://github.com/YuJunWang/Medical-Dialectic-Engine.git
 cd Medical-Dialectic-Engine
 ```
 
